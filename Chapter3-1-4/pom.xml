@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.didispace</groupId>
-	<artifactId>demo</artifactId>
+	<artifactId>Chapter3-1-4</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
-	<name>demo</name>
-	<description>Spring Boot Web project</description>
+	<name>Chapter3-1-4</name>
+	<description>Spring Boot Web project with Velocity</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
