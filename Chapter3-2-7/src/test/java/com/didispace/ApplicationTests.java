@@ -1,7 +1,5 @@
 package com.didispace;
 
-import com.didispace.domain.User;
-import com.didispace.domain.UserMapper;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -11,6 +9,8 @@ import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.didispace.domain.User;
+import com.didispace.domain.UserMapper;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = Application.class)
@@ -22,6 +22,7 @@ public class ApplicationTests {
 
 	@Test
 	@Rollback
+	// @Rollback(false)
 	public void findByName() throws Exception {
 		userMapper.insert("AAA", 20);
 		User u = userMapper.findByName("AAA");
